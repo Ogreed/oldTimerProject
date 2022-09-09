@@ -1,0 +1,84 @@
+<!-- Student Name: Olivia Reed
+    Date: 2/15/2022
+    File Name:timer.html -->
+    
+<!DOCTYPE html>
+<html>
+    <style>
+        #display {
+            text-align: center;
+            font-size: 5em;
+        }
+        
+        #btn {
+            text-align: center;
+            padding: 1.5%;
+        }
+        #startTimer{
+            margin: 0.5%
+        }
+        #stopTimer{
+            margin:0.5%
+        }
+        #resetTimer{
+            margin:0.5%;
+        }
+    </style>
+
+<head>
+<meta charset="utf-8">
+<title>Timer</title>
+
+<style>
+
+    
+
+</style>
+
+</head>
+
+<body>
+    <div id="btn">
+    <input type="button" id="startTimer" value="Start Timer"><br>
+    <input type="button" id="stopTimer" value="Stop Timer"><br> 
+    <input type="button" id="resetTimer" value="Reset Timer"><br>
+    </div>
+    <div id="display"></div>
+
+    <script>
+
+        
+        document.getElementById("stopTimer").addEventListener("click" , stopTimer);
+        document.getElementById("resetTimer").addEventListener("click" , resetTimer);
+        document.getElementById("startTimer").addEventListener("click" , startTimer);
+
+        var num = 0;
+        var countId; 
+        var stop;
+
+        function startTimer() {
+            countId = setInterval(count, 1000); 
+        }
+             
+        function count() {
+            num += 1;
+            document.getElementById("display").innerHTML = num; 
+        }
+
+            
+         function stopTimer() {
+            stop = clearInterval(countId); 
+        }
+
+        function resetTimer() { 
+            stopTimer(); 
+            num = 0;
+            document.getElementById("display").innerHTML = num; 
+        } 
+
+
+    </script>
+
+</body>
+
+</html>
