@@ -1,0 +1,42 @@
+
+body {
+    margin: 0 auto;
+    color: rgb(25, 23, 22);
+    background-color:rgb(233, 239, 245)
+}
+
+#display {
+    text-align: center;
+    font-size: 19em;
+    font-family: 'Qwitcher Grypen', cursive;
+    margin-top: 0;
+    padding-top: 0;
+    color: rgb(25, 23, 22);
+}
+
+h1 {
+    text-align: center;
+    font-size: 8em;
+    font-family: 'Qwitcher Grypen', cursive;
+    margin: 1%;
+}
+
+input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+
+#btn {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#startTimer{
+    margin-bottom: 0.5%;
+}
+#stopTimer{
+    margin:0.5%;
+}
+#resetTimer{
+    margin-top:0.5%;
+}
